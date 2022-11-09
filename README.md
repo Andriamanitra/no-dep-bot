@@ -4,7 +4,24 @@ You can make a pretty good IRC (twitch chat) bot without relying on any 3rd part
 
 All of the code in this repository is released under a permissive licence (no attribution required). Feel free to use them as a starting point for building your own more fully featured chat bots or twitch-integrated games/applications.
 
-## Features:
+## How to run
+
+### Python
+`python3 python/main.py`
+
+### Julia
+`julia julia/main.jl`
+
+### Crystal
+`crystal run crystal/main.cr`
+
+### D
+```
+dmd -od=d/bin/ -of=d/bin/main d/main.d d/twitchbot.d
+./d/bin/main
+```
+
+## Features
 
 The features are intentionally kept to a minimum so anyone can read through the code in a few minutes. Implementations in all of the different languages will have at least these basic capabilities:
 * Sending and receiving messages (the default `justinfanXXXX` user can only read messages, to send them you need to authenticate)
