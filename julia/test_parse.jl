@@ -6,7 +6,7 @@ include("./twitchbot.jl")
 
 TIMESTAMP_FORMAT = Dates.DateFormat("HH:MM:SS")
 
-function showmsg(msg::Msg)
+function showmsg(msg::Message)
     println("'$(msg.raw)'")
     println("    command='$(msg.command)'")
     println("    prefix='$(msg.prefix)'")
