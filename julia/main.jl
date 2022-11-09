@@ -34,7 +34,7 @@ function main()
         msg = parsemsg(line)
         if msg isa PrivMsg
             t_stamp = Dates.format(Dates.now(), TIMESTAMP_FORMAT)
-            put!(chan, "$(msg.channel) [$t_stamp] <$(msg.user)> $(msg.msg)")
+            put!(chan, "$(rpad(msg.channel, 10)) [$t_stamp] <$(msg.user)> $(msg.msg)")
         else
             put!(chan, msg)
         end

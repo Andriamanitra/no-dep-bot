@@ -22,7 +22,7 @@ end
 function showmsg(msg::PrivMsg)
     timestamp = Dates.DateTime("2006-01-02T15:04:05")
     ts = Dates.format(timestamp, TIMESTAMP_FORMAT)
-    println("$(msg.channel) [$ts] <$(msg.user)> $(msg.msg)")
+    println("$(rpad(msg.channel, 10)) [$ts] <$(msg.user)> $(msg.msg)")
 end
 
 Test.@test begin

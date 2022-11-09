@@ -24,7 +24,7 @@ bot.connect do |sock|
       channel = msg.params[0]
       message = msg.params[1]
       timestamp = TIMESTAMP_FMT.format(Time.utc)
-      printf("%10s [%s] <%s> %s\n", channel, timestamp, msg.sender, message)
+      printf("%-10s [%s] <%s> %s\n", channel, timestamp, msg.sender, message)
     else
       puts msg
     end
