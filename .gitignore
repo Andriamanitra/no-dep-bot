@@ -1,0 +1,4 @@
+**/bin/*
+testing/*.txt
+crystal/.editorconfig
+python/.flake8
