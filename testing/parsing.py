@@ -5,6 +5,7 @@ parsers = {
     "julia": ["julia", "julia/test_parse.jl"],
     "python": ["python3", "python/test_parse.py"],
     "crystal": ["crystal", "run", "--no-color", "crystal/test_parse.cr", "--"],
+    "d": ["d/bin/test_parse"]
 }
 
 def test_parsers(input_file_name: str) -> bool:
